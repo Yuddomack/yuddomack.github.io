@@ -5,7 +5,7 @@
         <b>목차</b>
       </div>
       <div class="tocClose">
-        <button>x</button>
+        <button v-on:click.stop.prevent="deactiveToc()">x</button>
       </div>
     </header>
     <div class="wrapInput">
