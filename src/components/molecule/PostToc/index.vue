@@ -1,5 +1,5 @@
 <template>
-  <aside>
+  <aside v-bind:class="{ active: tocActive }">
     <header class="tocHeader">
       <div class="tocTitle">
         <b>목차</b>
@@ -29,8 +29,29 @@
       <div class="content">· 항목8</div>
       <div class="content">· 항목9</div>
     </div>
+    <div class="see" v-on:click="activeToc()">
+      <a href="#">toc 펼쳐보기</a>
+    </div>
   </aside>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      tocActive: false,
+    };
+  },
+  methods: {
+    activeToc() {
+      this.tocActive = true;
+    },
+    deactiveToc() {
+      this.tocActive = false;
+    },
+  },
+};
+</script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
@@ -53,6 +74,7 @@ aside {
 }
 
 .tocClose {
+  display: none;
   float: right;
 }
 
@@ -80,6 +102,13 @@ input {
   padding-bottom: 5px;
 }
 
+.see {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  visibility: hidden;
+}
+
 @media (max-width: 768px) {
   aside {
     height: 100%;
@@ -88,6 +117,14 @@ input {
   }
 
   .active {
+    visibility: visible;
+  }
+
+  .tocClose {
+    display: block;
+  }
+
+  .see {
     visibility: visible;
   }
 }
