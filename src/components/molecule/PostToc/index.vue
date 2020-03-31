@@ -1,7 +1,16 @@
 <template>
   <aside>
-    <div><b>목차</b></div>
-    <div class="wrapInput"><input type="text" /></div>
+    <header class="tocHeader">
+      <div class="tocTitle">
+        <b>목차</b>
+      </div>
+      <div class="tocClose">
+        <button>x</button>
+      </div>
+    </header>
+    <div class="wrapInput">
+      <input type="text" />
+    </div>
     <div class="wrapContents">
       <div class="content">· 항목1</div>
       <div class="content">· 항목2</div>
@@ -33,6 +42,20 @@ aside {
   padding: 10px;
 }
 
+.tocHeader::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.tocTitle {
+  float: left;
+}
+
+.tocClose {
+  float: right;
+}
+
 .wrapInput {
   width: 100%;
   padding-top: 10px;
@@ -61,6 +84,11 @@ input {
   aside {
     height: 100%;
     position: absolute;
+    visibility: hidden;
+  }
+
+  .active {
+    visibility: visible;
   }
 }
 </style>
