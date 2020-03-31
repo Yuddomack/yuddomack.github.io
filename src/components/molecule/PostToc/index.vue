@@ -29,8 +29,8 @@
       <div class="content">· 항목8</div>
       <div class="content">· 항목9</div>
     </div>
-    <div class="see" v-on:click="activeToc()">
-      <a href="#">toc 펼쳐보기</a>
+    <div class="see">
+      <a href="#" v-on:click.stop.prevent="activeToc()">toc 펼쳐보기</a>
     </div>
   </aside>
 </template>
