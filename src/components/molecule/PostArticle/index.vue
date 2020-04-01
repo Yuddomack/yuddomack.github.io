@@ -9,7 +9,7 @@
       가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사
       가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사
     </p>
-    <div style="text-align: center">
+    <div style="text-align: center;">
       <img src="@/images/main_logo.png" height="200px" />
     </div>
     <p>
