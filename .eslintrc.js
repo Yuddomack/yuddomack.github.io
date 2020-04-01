@@ -11,9 +11,12 @@ module.exports = {
   // https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention
   // consider switching to `plugin:vue/strongly-recommended` or `plugin:vue/recommended` for stricter rules.
   extends: [
-    'plugin:prettier/recommended',
     'plugin:vue/essential',
     'airbnb-base',
+    'plugin:vue/recommended',
+    'eslint:recommended',
+    'prettier/vue',
+    'plugin:prettier/recommended',
   ],
   // required to lint *.vue files
   plugins: ['vue'],
