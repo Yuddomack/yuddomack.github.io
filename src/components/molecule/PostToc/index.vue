@@ -106,6 +106,7 @@ input {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  background: white;
   visibility: hidden;
 }
 
