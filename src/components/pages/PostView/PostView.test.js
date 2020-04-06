@@ -2,7 +2,7 @@
 import { shallowMount } from '@vue/test-utils';
 import PostView from '@/components/pages/PostView';
 
-describe('HelloWorld.vue', () => {
+describe('PostView.vue', () => {
   it('should render correct contents', () => {
     const Constructor = shallowMount(PostView); // Vue.extend(PostView);
     // const vm = Constructor.vm; // new Constructor().$mount();
