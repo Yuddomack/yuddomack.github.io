@@ -17,9 +17,10 @@ module.exports = {
     'eslint:recommended',
     'prettier/vue',
     'plugin:prettier/recommended',
+    'plugin:jest/recommended',
   ],
   // required to lint *.vue files
-  plugins: ['vue'],
+  plugins: ['vue', 'jest'],
   // check if imports actually resolve
   settings: {
     'import/resolver': {
