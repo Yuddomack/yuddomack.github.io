@@ -30,3 +30,5 @@ npm test
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 eslint [관련 글](https://velog.io/@velopert/eslint-and-prettier-in-react)
+unit testing without vue-test-utils [문서](https://kr.vuejs.org/v2/guide/unit-testing.html)
+unit testing with vue-test-utils [문서](https://vue-test-utils.vuejs.org/api/wrapper-array/#isvueinstance)
