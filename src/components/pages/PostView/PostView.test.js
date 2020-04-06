@@ -1,9 +1,11 @@
-import Vue from 'vue';
-import PostView from './index.vue';
+// import Vue from 'vue';
+import { shallowMount } from '@vue/test-utils';
+import PostView from '@/components/pages/PostView';
 
-describe('PostView', () => {
-  test('PostView Component', () => {
-    const cmp = new Vue(PostView).$mount();
-    expect(cmp.name).toBe('PostView');
+describe('HelloWorld.vue', () => {
+  it('should render correct contents', () => {
+    const Constructor = shallowMount(PostView); // Vue.extend(PostView);
+    // const vm = Constructor.vm; // new Constructor().$mount();
+    expect(Constructor.find('.post-view').exists()).toBe(true);
   });
 });
