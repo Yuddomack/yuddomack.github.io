@@ -2,12 +2,18 @@
   <header>
     <div class="navBar">
       <div class="logo">
-        <a href="#"><img src="@/images/main_logo.png" height="100%"/></a>
+        <a href="#">
+          <img src="@/images/main_logo.png" height="100%" />
+        </a>
       </div>
       <div class="menu">
         <ul>
-          <li><p>메뉴1</p></li>
-          <li><p>메뉴2</p></li>
+          <li>
+            <p>메뉴1</p>
+          </li>
+          <li>
+            <p>메뉴2</p>
+          </li>
         </ul>
       </div>
     </div>
