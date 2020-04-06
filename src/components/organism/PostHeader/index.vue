@@ -2,7 +2,7 @@
   <header>
     <div class="navBar">
       <div class="logo">
-        <a href="#"><img src="@/images/main_logo.png" height="100%" /></a>
+        <a href="#"><img src="@/images/main_logo.png" height="100%"/></a>
       </div>
       <div class="menu">
         <ul>
