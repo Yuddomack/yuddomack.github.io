@@ -1,11 +1,11 @@
 <template>
-  <aside v-@bind:class="{ active: tocActive }">
+  <aside :class="{ active: tocActive }">
     <header class="tocHeader">
       <div class="tocTitle">
         <b>목차</b>
       </div>
       <div class="tocClose">
-        <button v-@on:click.stop.prevent="deactiveToc()">x</button>
+        <button @click.stop.prevent="deactiveToc()">x</button>
       </div>
     </header>
     <div class="wrapInput">
@@ -30,7 +30,7 @@
       <div class="content">· 항목9</div>
     </div>
     <div class="see">
-      <a v-@on:click.stop.prevent="activeToc()" href="#">toc 펼쳐보기</a>
+      <button @click.stop.prevent="activeToc()">toc 펼쳐보기</button>
     </div>
   </aside>
 </template>
