@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /archives/
+Disallow: /categories/
+Disallow: /css/
+Disallow: /fancybox/
+Disallow: /js/
+Disallow: /img/
+Sitemap: /sitemap.xml
